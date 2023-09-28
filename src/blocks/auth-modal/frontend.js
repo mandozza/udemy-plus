@@ -1,3 +1,23 @@
+/**
+ * Handles modal interactions and form submissions for authentication.
+ *
+ * This event listener:
+ * - Initiates modal display when an element with the `.open-modal` class is clicked.
+ * - Closes the modal when the overlay or close button is clicked.
+ * - Toggles between the sign-in and sign-up forms based on the active tab.
+ * - Submits the sign-in form data to the specified endpoint and handles the response.
+ * - Submits the sign-up form data to the specified endpoint and handles the response.
+ *
+ * @since 1.0.0
+ *
+ * @listens DOMContentLoaded The event fired when the initial HTML document has been completely loaded.
+ *
+ * @fires up_auth_rest.signin The endpoint for submitting sign-in data.
+ * @fires up_auth_rest.signup The endpoint for submitting sign-up data.
+ *
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event|DOMContentLoaded event on MDN}
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
   const openModalBtn = document.querySelectorAll('.open-modal');
   const modalEl = document.querySelector('.wp-block-udemy-plus-auth-modal');
