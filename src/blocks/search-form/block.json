@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "udemy-plus/search-form",
+    "title": "Search Form",
+    "description": "Adds a search form",
+    "category": "widgets",
+    "keywords": ["search form", "search"],
+    "version": "1.0.0",
+    "textdomain": "udemy-plus",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "bgColor": {
+            "type": "string",
+            "default": "#f87171"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        }
+    },
+    "style": "file:./index.css"
+}
